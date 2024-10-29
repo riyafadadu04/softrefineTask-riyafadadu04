@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+
+    <!-- fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/0e9195495d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- js -->
+     <script defer src="script.js"></script>
+</head>
+<body>
+    <main class="employee">
+        <div class="employee__list--menu hidden">
+            <div class="menu_employee">
+                <div class="employee__list__header">
+                    <h2 class="heading__secondery">Employee List</h2>
+                    <span class="employee__add"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <ul class="employee__list__body--menu">
+                    <!-- <li class="employee__list__body__li--menu">
+                        <div class="li__name">fname lname</div>
+                        <div class="employee__delete"><i class="fa-solid fa-xmark"></i></div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="employee__list">
+            <div class="employee__list__header">
+                <h2 class="heading__secondery">Employee List</h2>
+                <span class="employee__add"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <ul class="employee__list__body">
+                <!-- <li class="employee__list__body__li">
+                    <div class="li__name">fname lname</div>
+                    <div class="employee__delete"><i class="fa-solid fa-xmark"></i></div>
+                </li>
+                <li class="employee__list__body__li">
+                    <div class="li__name">fname lname</div>
+                    <div class="employee__delete"><i class="fa-solid fa-xmark"></i></div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="employee__detail">
+            <div class="employee__detail__header">
+                <i class="fa-solid fa-bars menu-icon"></i>
+                <h2 class="heading__secondery">Employee Information</h2>
+            </div>
+            <div class="employee__detail__body">
+                <h3 class="heading__secondery">No Employee</h3>
+                <!-- <h1 class="heading__primary e_name"></h1>
+                <p class="employee__detail__body__info">Address: <span class="e_address"></span></p>
+                <p class="employee__detail__body__info">Email: <span class="e_email"></span></p>
+                <p class="employee__detail__body__info">Phone: <span class="e_phone"></span></p>
+                <p class="employee__detail__body__info">Salary: <span class="e_salary"></span></p>
+                <p class="employee__detail__body__info">DOB: <span class="e_dob"></span></p> -->
+            </div>
+        </div>
+        <div class="employee__form hidden">
+            <form class="employee__form--form">
+                <h2 class="heading__secondery text-center">Add New Employee</h2>
+                <div class="name">
+                    <input type="text" id="fName" class="employee__form--fname input" placeholder="First Name" required>
+                    <input type="text" id="lName" class="employee__form--lname input" placeholder="Last Name" required>
+                </div>
+                <!-- <input type="file" src="" class="employee__form--img input" alt="image"> -->
+                <input type="text" class="employee__form--img input" placeholder="Image Url (optional)">
+                <input type="email" id="email" class="employee__form--email input" placeholder="Email" required>
+                <input type="tel" id="phone" class="employee__form--phone input" placeholder="Contact" required>
+                <input type="number" name="salary" class="employee__form--salary input" id="salary" placeholder="Salary" required>
+                <textarea id="address" class="employee__form--address input" placeholder="Address" required></textarea>
+                <input type="date" id="dob" class="employee__form--dob input" required>
+                <div class="form__submit">
+                    <button type="submit" class="employee__submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="employee__form--edit hidden">
+            <form class="employee__formEdit--form">
+                <h2 class="heading__secondery text-center">Edit Employee</h2>
+                <div class="name">
+                    <input type="text" id="fName" class="employee__formEdit--fname input" placeholder="First Name" required>
+                    <input type="text" id="lName" class="employee__formEdit--lname input" placeholder="Last Name" required>
+                </div>
+                <input type="text" class="employee__formEdit--img input" placeholder="Image Url (optional)">
+                <input type="email" id="email" class="employee__formEdit--email input" placeholder="Email" required>
+                <input type="tel" id="phone" class="employee__formEdit--phone input" placeholder="Contact" required>
+                <input type="number" name="salary" class="employee__formEdit--salary input" id="salary" placeholder="Salary" required>
+                <textarea id="address" class="employee__formEdit--address input" placeholder="Address" required></textarea>
+                <input type="date" id="dob" class="employee__formEdit--dob input" required>
+                <div class="formEdit__submit">
+                    <button type="submit" class="employee__update">Update</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
